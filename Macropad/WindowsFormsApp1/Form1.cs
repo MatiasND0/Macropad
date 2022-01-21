@@ -170,7 +170,6 @@ namespace WindowsFormsApp1
                 comboBox1.SelectedIndex = 0;
             }
             profileKeyList = Settings.Default.profileKeys;
-            label1.Text = Settings.Default.profileKeys.Count.ToString();
             if (Settings.Default.profileKeys.Count <= 0)
             {
                 profileKeyList.Add("A");
@@ -347,7 +346,7 @@ namespace WindowsFormsApp1
                     for (int j = 0; j < value.Length; j++)
                         message[j + 1] = value[j];
                     sendProfile(message);
-                    Thread.Sleep(35);
+                    Thread.Sleep(40);
                 }
             }
             catch
